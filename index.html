@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/657de39a82.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="error404">
+            <img src="ee.png" alt="Left Image">
+        </div>
+    <div class="container">
+        
+        <canvas id="tetris" width="240" height="400"></canvas>
+
+        <div class="game-data">
+            <div id="score">Score : 0</div>
+            <div class="buttons">
+                <button id="startBtn">Start Game</button>
+                <button id="pauseBtn">Pause</button>
+                <button id="stopBtn">Stop</button>
+            </div>
+            <select name="Level" id="level">
+                <option value="easy">Easy</option>
+                <option value="normal">Normal</option>
+                <option value="hard">Hard</option>
+            </select>
+            <div class="help">
+                <div class="tetris-move">
+                    <h1>Controls :</h1>
+                    <i class="fa-solid fa-arrow-left-long left"></i>
+                    <i class="fa-solid fa-arrow-right-long right"></i>
+                    <i class="fa-solid fa-arrow-down-long down"></i>
+                </div>
+
+                <div class="rotate">
+                    <h1>Rotate</h1>
+                    <p>Click Q : <i class="fa-solid fa-arrow-rotate-left"></i></p>
+                    <p>Click W : <i class="fa-solid fa-arrow-rotate-right"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add an input field and a button for the user to change the score goal -->
+    <label for="scoreGoalInput">Set Score Goal:</label>
+<input type="number" id="scoreGoalInput" min="10" step="10" placeholder="Enter multiple of 10">
+<button id="setScoreGoalBtn">Set Score Goal</button>
+
+    <script src="index.js"></script>
+</body>
+</html>
